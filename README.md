@@ -1,5 +1,6 @@
 # Active-Learning-Directed-Evolution-of-the-SCOOP-MIK2-System
 
+<img width="565" height="433" alt="MIK2-SCOOP" src="https://github.com/user-attachments/assets/52f41885-3b9f-4764-9997-b1303156b46f" />
 
 ## Overview
 
