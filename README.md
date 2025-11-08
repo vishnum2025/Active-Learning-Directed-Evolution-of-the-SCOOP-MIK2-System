@@ -7,7 +7,7 @@
 This project focuses on engineering **synthetic immune-trigger peptides** that activate the plant immune receptor **MIK2** more effectively than natural SCOOP peptides. By integrating **phylogenetics**, **machine learning-based active learning**, and **AlphaFold 3 structural modeling**, this work demonstrates a framework for computational directed evolution of both:
 
 - **Ligands (SCOOP-like peptides)**
-- **Receptors (MIK2 variants — future phase)**
+- **Receptors (MIK2 variants)**
 
 This project is a part of the **Plant Systems and Synthetic Biology Lab at Georgia Tech** under the guidance of **Dr. Lily Cheung**.
 
