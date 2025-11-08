@@ -28,19 +28,19 @@ Plants detect molecular signals of damage or infection using receptor-like kinas
 ### **1. Phylogenetic Mapping of MIK2**
 - Collected MIK2 sequences across Brassicaceae.
 - Built a rooted **maximum-likelihood phylogenetic tree**.
-- Clustered homologs → selected *Arabidopsis thaliana* MIK2 for modeling.
+- Clustered homologs → selected *Arabidopsis thaliana*, which was the cluster representative of the MIK2 clade for modeling.
 
 ### **2. Peptide Library Generation**
-- Started with **39 natural SCOOP/SCOOP-like peptides**.
+- Started with **39 natural SCOOP/SCOOP-like peptides** from *Arabidopsis thaliana* and *Fusarium oxysporum*.
 - Generated:
-  - 3900 single/double mutants (point mutations)
-  - 8000 de novo peptides (randomized, but SxS motif preserved)
+  - 3900 single/double mutants with point mutations
+  - 8000 de novo peptides (randomized, but with the functional SxS motif preserved)
 - Total search space: **~11,500 peptides**
 
 ### **3. Active Learning Directed Evolution (ALDE)**
-- Encoded peptides as **13×20 one-hot vectors (260-dim)**.
+- Encoded peptides as **260 dimensional one-hot vectors**.
 - Trained an ensemble of deep neural networks on seed peptides labeled by AlphaFold 3 predicted binding (iPTM scores) as the target variable "fitness".
-- Used **Thompson Sampling + Uncertainty + Hamming distance ≥3** to select diverse high-potential peptides.
+- Used **Bayesian Optimization + Thompson Sampling + Hamming distance** to select diverse high-potential peptides from the sequence space.
 - Output: **96 high-fitness peptide candidates**
 
 ### **4. Structural Screening with AlphaFold 3**
