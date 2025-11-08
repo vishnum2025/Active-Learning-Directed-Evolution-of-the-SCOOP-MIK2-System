@@ -47,3 +47,6 @@ Plants detect molecular signals of damage or infection using receptor-like kinas
 
 
 ---
+
+
+_All the cited work has been mentioned in the References.md file_
