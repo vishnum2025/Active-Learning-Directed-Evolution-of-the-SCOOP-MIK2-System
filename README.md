@@ -32,15 +32,15 @@ Plants detect molecular signals of damage or infection using receptor-like kinas
 ### **2. Peptide Library Generation**
 - Started with **39 natural SCOOP/SCOOP-like peptides**.
 - Generated:
-  - ~3900 single/double mutants (point mutations)
+  - 3900 single/double mutants (point mutations)
   - 8000 de novo peptides (randomized, but SxS motif preserved)
 - Total search space: **~11,500 peptides**
 
 ### **3. Active Learning Directed Evolution (ALDE)**
 - Encoded peptides as **13×20 one-hot vectors (260-dim)**.
-- Trained neural networks on seed peptides labeled by **AlphaFold 3 predicted binding (iPTM scores)**.
+- Trained an ensemble of deep neural networks on seed peptides labeled by AlphaFold 3 predicted binding (iPTM scores) as the target variable "fitness".
 - Used **Thompson Sampling + Uncertainty + Hamming distance ≥3** to select diverse high-potential peptides.
-- Output: **96 next-generation peptide candidates**
+- Output: **96 high-fitness peptide candidates**
 
 ### **4. Structural Screening with AlphaFold 3**
 - Modeled all 96 peptides binding to MIK2 using **AlphaFold 3 on GT Phoenix HPC**.
