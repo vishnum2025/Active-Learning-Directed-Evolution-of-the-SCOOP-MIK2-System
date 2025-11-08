@@ -16,10 +16,7 @@ This project is a part of the **Plant Systems and Synthetic Biology Lab at Georg
 ## Biological Background
 
 Plants detect molecular signals of damage or infection using receptor-like kinases.  
-**MIK2** is one such receptor that recognizes **SCOOP peptides**, small 13-amino-acid danger signals containing a conserved **S–x–S motif**.
-
-- Pathogens like *Fusarium oxysporum* secrete **SCOOP-like mimic peptides** to confuse this signaling.
-- This results in an **evolutionary arms race** between plant immune receptors and microbial peptides.
+**MIK2** is one such receptor that recognizes **SCOOP peptides**, small 13-amino-acid danger signals containing a conserved **S–x–S motif**. Pathogens like *Fusarium oxysporum* secrete **SCOOP-like mimic peptides** to inhibit this signaling. This results in an evolutionary arms race between plant immune receptors and microbial peptides.
 
 ---
 
