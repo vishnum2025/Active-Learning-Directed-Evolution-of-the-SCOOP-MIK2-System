@@ -9,7 +9,7 @@ This project focuses on engineering **synthetic immune-trigger peptides** that a
 - **Ligands (SCOOP-like peptides)**
 - **Receptors (MIK2 variants)**
 
-This project is a part of the **Plant Systems and Synthetic Biology Lab at Georgia Tech** under the guidance of **Dr. Lily Cheung**.
+This project is a part of the **Plant Systems and Synthetic Biology Lab @ Georgia Institute of Technology** under the guidance of **Dr. Lily Cheung**.
 
 ---
 
