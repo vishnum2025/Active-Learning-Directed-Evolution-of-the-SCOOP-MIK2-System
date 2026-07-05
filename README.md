@@ -45,6 +45,32 @@ Plants detect molecular signals of damage or infection using receptor-like kinas
 - ~60% of peptides achieved **iPTM ≥ 0.8**, comparable or superior to natural SCOOPs.
 - Novel peptides preserved the SxS core but explored new tolerated residues.
 
+### **5. Receptor Selection for Orthogonality**
+
+- Screened all MIK2 clade orthologs and paralogs against top ALDE peptides (ALDE1, ALDE2) and native SCOOPs (SCOOP10B, SCOOP12) using AlphaFold 3.
+- Selected via delta fitness: Δfitness = max(iPTM_ALDE) − max(iPTM_SCOOP).
+- C. rubella MIK2 (Carub0001s3337) had the highest delta fitness → selected as engineering chassis (CrMIK2).
+
+### **6. Interface Mapping**
+
+- Identified 43 receptor residues within 5 Å of CrMIK2–ALDE1 complex (AlphaFold 3 structure).
+- Filtered against MSA of all MIK2 orthologs for evolutionary variability.
+- Intersection yielded 9 candidate mutagenesis sites: 61, 110, 181, 201, 273, 278, 302, 321, 326.
+
+### **7. Single Mutant Screening and Additive Model**
+
+- Modeled all single amino acid substitutions at the 9 positions against ALDE1 and SCOOP12 via AlphaFold 3.
+- Built additive null model to test independence hypothesis of interface residues.
+- Quantified epistasis via logit-transformed metric to correct bounded-scale artifacts.
+
+### **8. EVOLVEpro for Double Mutant Generation**
+
+- Trained random forest regression on ESM-2 embeddings of 171 single mutant sequences.
+- Ranked all 12,996 possible double mutants.
+- Top 20 EVOLVEpro nominations validated via AlphaFold 3: 18/20 met selectivity threshold (ALDE1 iPTM ≥ 0.80, SCOOP12 iPTM < 0.80).
+- Tested EVOLVEpro nominations and additive model top predictions against all 14 ALDE peptides and 27 native SCOOPs.
+
+
 
 ---
 
